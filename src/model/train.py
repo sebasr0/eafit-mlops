@@ -150,7 +150,7 @@ from torch.utils.data import DataLoader
 
 def train_and_log(config,experiment_id='99'):
     with wandb.init(
-        project="MLOps-Pycon2023", 
+        project="MLOps-Project1", 
         name=f"Train Model ExecId-{args.IdExecution} ExperimentId-{experiment_id}", 
         job_type="train-model", config=config) as run:
         config = wandb.config
